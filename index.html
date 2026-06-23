@@ -66,7 +66,7 @@
       },
       "telephone": "+27110391001",
       "email": "info@adsc.co.za",
-      "openingHours": "Mo-Su 06:00-17:00",
+      "openingHours": "Mo-Fr 08:00-17:00, Sa 08:00-15:00, Su 08:00-13:00",
       "priceRange": "$$",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -127,7 +127,7 @@
           "name": "What are your operating hours?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We are open Monday to Sunday from 6:00 AM to 5:00 PM."
+            "text": "We are open everyday from 8 AM. Weekdays 8 AM – 5 PM, Saturday 8 AM – 3 PM, Sunday 8 AM – 1 PM."
           }
         },
         {
@@ -178,17 +178,21 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "06:00",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
           "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "15:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "08:00",
+          "closes": "13:00"
         }
       ]
     }
@@ -321,17 +325,23 @@
             </div>
             <div class="detail-row">
               <i class="fas fa-clock"></i>
-              <span class="status open">Open · Closes 5 pm</span>
+              <span class="status open">Open · Mon-Fri 8AM-5PM, Sat 8AM-3PM, Sun 8AM-1PM</span>
             </div>
           </div>
 
           <div class="popular-times">
-            <p class="popular-label">Times</p>
+            <p class="popular-label">Hours</p>
             <div class="day-row">
-              <span class="day">Monday - Sunday</span>
+              <span class="day">Monday - Friday</span>
+              <span class="bar-label">8:00 – 17:00</span>
             </div>
-            <div class="hour-markers">
-              <span>6a</span><span>9a</span><span>12p</span><span>3p</span><span>6p</span><span>9p</span>
+            <div class="day-row">
+              <span class="day">Saturday</span>
+              <span class="bar-label">8:00 – 15:00</span>
+            </div>
+            <div class="day-row">
+              <span class="day">Sunday</span>
+              <span class="bar-label">8:00 – 13:00</span>
             </div>
           </div>
 
@@ -431,7 +441,7 @@
       <div class="faq-grid" data-aos="fade-up" data-aos-delay="100">
         <div class="faq-item">
           <h3>What are your operating hours?</h3>
-          <p>We are open Monday to Sunday from 6:00 AM to 5:00 PM.</p>
+          <p>We are open everyday from 8 AM. Weekdays 8 AM – 5 PM, Saturday 8 AM – 3 PM, Sunday 8 AM – 1 PM.</p>
         </div>
         <div class="faq-item">
           <h3>Do you offer fleet discounts?</h3>
@@ -541,9 +551,9 @@
         </form>
       </div>
 
-      <!-- Google Maps -->
+      <!-- Google Maps - Updated with new exact location embed -->
       <div class="map-container" data-aos="fade-up" data-aos-delay="150">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.905164601886!2d28.0475!3d-26.2041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c6b1c1e6d6b%3A0x3b6d5c6b1c1e6d6b!2sJohannesburg!5e0!3m2!1sen!2sza!4v1710000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ADSC Location - Google Maps"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.983822496427!2d28.084792974733695!3d-26.09944675971456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95738645a5f421%3A0x5bb87f66822ef8ba!2sDunlop%20Express%20-%20Alexandra%20Tyres!5e0!3m2!1sen!2sus!4v1782217680458!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Dunlop Express - Alexandra Tyres Location"></iframe>
       </div>
     </div>
   </section>
