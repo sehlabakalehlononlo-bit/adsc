@@ -1,28 +1,584 @@
-// AOS init
-AOS.init({
-  duration: 800,
-  once: true,
-  offset: 60
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========== META TAGS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- ========== PRIMARY TITLE ========== -->
+  <title>ADSC (Pty) Ltd | Tyre Services & Fleet Support in Johannesburg</title>
+  
+  <!-- ========== PRIMARY META DESCRIPTION ========== -->
+  <meta name="description" content="ADSC (Pty) Ltd offers professional tyre services, mechanical repairs, and fleet support in Johannesburg. Dunlop Express dealer serving corporate, government & private clients." />
+  
+  <!-- ========== KEYWORDS ========== -->
+  <meta name="keywords" content="tyre services Johannesburg, fleet support South Africa, Dunlop Express, tyre fitment, mechanical repairs, battery services, Alexandra Tyres, automotive services Sandton" />
+  
+  <!-- ========== ROBOTS ========== -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.adsc.co.za/" />
+  
+  <!-- ========== OPEN GRAPH (SOCIAL MEDIA) ========== -->
+  <meta property="og:title" content="ADSC (Pty) Ltd | Tyre Services & Fleet Support in Johannesburg" />
+  <meta property="og:description" content="Professional tyre services, mechanical repairs, and fleet support for corporate, government and private clients in South Africa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.adsc.co.za/" />
+  <meta property="og:image" content="https://www.adsc.co.za/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  
+  <!-- ========== TWITTER CARDS ========== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ADSC (Pty) Ltd | Tyre Services & Fleet Support in Johannesburg" />
+  <meta name="twitter:description" content="Professional tyre services, mechanical repairs, and fleet support in South Africa." />
+  <meta name="twitter:image" content="https://www.adsc.co.za/images/og-image.jpg" />
+  
+  <!-- ========== GEO TAGS ========== -->
+  <meta name="geo.region" content="ZA-GP" />
+  <meta name="geo.placename" content="Johannesburg" />
+  <meta name="geo.position" content="-26.2041;28.0475" />
+  <meta name="ICBM" content="-26.2041, 28.0475" />
+  
+  <!-- ========== BUSINESS INFORMATION ========== -->
+  <meta name="author" content="ADSC (Pty) Ltd" />
+  <meta name="copyright" content="ADSC (Pty) Ltd" />
+  
+  <!-- ========== STRUCTURED DATA (JSON-LD) ========== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "ADSC (Pty) Ltd",
+      "image": "https://www.adsc.co.za/logo.png",
+      "description": "Professional tyre services, mechanical repairs, and fleet support in Johannesburg.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7 Cnr 1st Ave and 3rd St",
+        "addressLocality": "Marlboro",
+        "addressRegion": "Sandton",
+        "postalCode": "2063",
+        "addressCountry": "ZA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.2041",
+        "longitude": "28.0475"
+      },
+      "telephone": "+27110391001",
+      "email": "info@adsc.co.za",
+      "openingHours": "Mo-Fr 08:00-17:00, Sa 08:00-15:00, Su 08:00-13:00",
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "126"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Johannesburg"
+        },
+        {
+          "@type": "State",
+          "name": "Gauteng"
+        }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tyre Services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mechanical Repairs"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Battery Services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fleet Support"
+          }
+        }
+      ]
+    }
+  </script>
+  
+  <!-- ========== FAQ SCHEMA ========== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are your operating hours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are open everyday from 8 AM. Weekdays 8 AM – 5 PM, Saturday 8 AM – 3 PM, Sunday 8 AM – 1 PM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer fleet discounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer competitive fleet pricing and maintenance packages for corporate clients."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are you located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are located at 7 Cnr 1st Ave and 3rd St, Marlboro, Sandton, 2063."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What tyre brands do you stock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We stock premium brands including Dunlop, Bridgestone, Michelin, Goodyear, and Continental."
+          }
+        }
+      ]
+    }
+  </script>
+  
+  <!-- ========== LOCAL BUSINESS SCHEMA ========== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ADSC (Pty) Ltd",
+      "image": "https://www.adsc.co.za/logo.png",
+      "telephone": "+27110391001",
+      "email": "info@adsc.co.za",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7 Cnr 1st Ave and 3rd St",
+        "addressLocality": "Marlboro",
+        "addressRegion": "Sandton",
+        "postalCode": "2063",
+        "addressCountry": "ZA"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "15:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "08:00",
+          "closes": "13:00"
+        }
+      ]
+    }
+  </script>
+  
+  <!-- ========== BREADCRUMB SCHEMA ========== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.adsc.co.za/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.adsc.co.za/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contact",
+          "item": "https://www.adsc.co.za/#contact"
+        }
+      ]
+    }
+  </script>
 
-// Mobile Hamburger
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- AOS Scroll Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- ========== FAVICON ========== -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div class="navbar">
+      <a href="#" class="logo" aria-label="ADSC Home">
+        <img src="logo.png" alt="ADSC (Pty) Ltd - Automotive Services" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
 
-// Close nav on link click (mobile)
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-  });
-});
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+      <div class="hero-flex">
+        <div class="hero-text">
+          <h4>Automotive Services & Tyre Solutions</h4>
+          <h1>Keeping South Africa's Fleets Moving</h1>
+          <p>Professional tyre services, mechanical repairs, and fleet support for corporate, government and private clients in Johannesburg and across Gauteng.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn">Get a Quote</a>
+            <a href="#contact" class="btn btn-outline">Emergency Assistance</a>
+          </div>
+        </div>
+        <div class="hero-logo">
+          <img src="logo.png" alt="ADSC Logo - Automotive Services" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-// Contact form
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Thank you for contacting ADSC. We will get back to you shortly.');
-  this.reset();
-});
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>About ADSC</span>
+        <h2>Automotive Services & Tyre Solutions</h2>
+      </div>
+      <p class="center-text" data-aos="fade-up" data-aos-delay="100">
+        ADSC (Pty) Ltd is a Johannesburg-based automotive services company providing reliable, cost-effective and efficient solutions to both corporate clients and private individuals throughout South Africa.
+      </p>
+      <p class="center-text" data-aos="fade-up" data-aos-delay="150">
+        Through Alexandra Tyres (Dunlop Express), we deliver professional tyre services and mechanical support focused on safety, uptime and operational efficiency. We are committed to building long-term partnerships through quality workmanship, responsive service and dependable support for fleets of all sizes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== DIVISIONS ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>Our Division</span>
+        <h2>Specialised Automotive Support</h2>
+      </div>
+      <div class="grid-1" data-aos="fade-up" data-aos-delay="100">
+        <!-- Alexandra Tyres Card -->
+        <div class="card division-card">
+          <div class="division-image">
+            <img src="images/tyres.png" alt="Alexandra Tyres Workshop - Dunlop Express" />
+          </div>
+          <div class="division-header">
+            <h3>Dunlop Express - Alexandra Tyres</h3>
+            <div class="rating-badge">
+              <span class="stars">★</span> 4.5
+              <span class="review-count">(126 reviews)</span>
+            </div>
+            <span class="business-type">Tyre Shop</span>
+          </div>
+          
+          <div class="division-details">
+            <div class="detail-row">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>7 Cnr 1st Ave and, 3rd St, Marlboro, Sandton, 2063</span>
+            </div>
+            <div class="detail-row">
+              <i class="fas fa-clock"></i>
+              <span class="status open">Open · Mon-Fri 8AM-5PM, Sat 8AM-3PM, Sun 8AM-1PM</span>
+            </div>
+          </div>
+
+          <div class="popular-times">
+            <p class="popular-label">Hours</p>
+            <div class="day-row">
+              <span class="day">Monday - Friday</span>
+              <span class="bar-label">8:00 – 17:00</span>
+            </div>
+            <div class="day-row">
+              <span class="day">Saturday</span>
+              <span class="bar-label">8:00 – 15:00</span>
+            </div>
+            <div class="day-row">
+              <span class="day">Sunday</span>
+              <span class="bar-label">8:00 – 13:00</span>
+            </div>
+          </div>
+
+          <div class="division-footer">
+            <a href="#contact" class="btn btn-full">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="section grey-bg">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>Our Services</span>
+        <h2>Professional Automotive Solutions</h2>
+      </div>
+      <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
+        <!-- 1 -->
+        <div class="service-card">
+          <img src="images/tfit.png" alt="Tyre Fitment Services Johannesburg" />
+          <div class="info">
+            <h3>Tyre &amp; Fitment</h3>
+            <ul>
+              <li>Passenger Tyres</li><li>Commercial Tyres</li><li>Fleet Tyres</li>
+              <li>Wheel Balancing</li><li>Tyre Replacements</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="service-card">
+          <img src="images/ms.png" alt="Mechanical Repairs Sandton" />
+          <div class="info">
+            <h3>Mechanical &amp; Suspension</h3>
+            <ul>
+              <li>Suspension Diagnostics</li><li>Engine Overhauls</li>
+              <li>Wheel Alignment</li><li>Brake Repairs</li>
+              <li>Control Arms</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="service-card">
+          <img src="images/bats.png" alt="Battery Services Johannesburg" />
+          <div class="info">
+            <h3>Battery Services</h3>
+            <ul>
+              <li>Battery Sales</li><li>Battery Installation</li><li>Battery Replacement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GOVERNANCE & LEADERSHIP ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>Governance &amp; Leadership</span>
+        <h2>Our Directors</h2>
+      </div>
+      <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="card"><h3>Melusi Innocent Hadebe</h3><p>Managing Director</p></div>
+        <div class="card"><h3>Zamambatha Euphemia Hadebe</h3><p>Director</p></div>
+        <div class="card"><h3>Lwazi Sandile Hadebe</h3><p>Director</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE ========== -->
+  <section class="section grey-bg">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>Why Choose ADSC</span>
+        <h2>Value Proposition</h2>
+      </div>
+      <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="card"><h3>Reliable &amp; Responsive</h3><p>Fast turnaround and dependable support for all your automotive needs.</p></div>
+        <div class="card"><h3>Cost Effective</h3><p>Competitive pricing for individuals and corporate fleets.</p></div>
+        <div class="card"><h3>Full Service Offering</h3><p>Tyres and mechanical under one roof.</p></div>
+        <div class="card"><h3>Fleet Experience</h3><p>Proven ability to service high-demand environments.</p></div>
+        <div class="card"><h3>Strategic Location</h3><p>Serving Johannesburg and surrounding areas.</p></div>
+        <div class="card"><h3>24/7 Support</h3><p>Standby assistance for fleet and commercial clients.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ SECTION ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-item">
+          <h3>What are your operating hours?</h3>
+          <p>We are open everyday from 8 AM. Weekdays 8 AM – 5 PM, Saturday 8 AM – 3 PM, Sunday 8 AM – 1 PM.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer fleet discounts?</h3>
+          <p>Yes, we offer competitive fleet pricing and maintenance packages for corporate clients.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Where are you located?</h3>
+          <p>We are located at 7 Cnr 1st Ave and 3rd St, Marlboro, Sandton, 2063.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What tyre brands do you stock?</h3>
+          <p>We stock premium brands including Dunlop, Bridgestone, Michelin, Goodyear, and Continental.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer emergency roadside assistance?</h3>
+          <p>Yes, we provide 24/7 emergency support for fleet and commercial clients.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I book a service?</h3>
+          <p>You can contact us via phone, email, or through our contact form on this website.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OPERATIONS & CAPACITY ========== -->
+  <section class="section dark-bg">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span style="background: rgba(255,255,255,0.12); color: #7DA7F7;">Operations &amp; Capacity</span>
+        <h2>Built for Performance</h2>
+      </div>
+      <div class="capacity-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="capacity-item">✓ Experienced Technical Team</div>
+        <div class="capacity-item">✓ Fully Equipped Workshop</div>
+        <div class="capacity-item">✓ Fleet &amp; Individual Support</div>
+        <div class="capacity-item">✓ Gauteng Coverage</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLIENTS CAROUSEL ========== -->
+  <section id="clients">
+    <div class="logo-slider">
+      <div class="logo-track" data-aos="fade-up">
+        <!-- Duplicate for seamless loop -->
+        <img src="images/avisfleet.png" alt="Avis - Client" />
+        <img src="images/nt.png" alt="Treasury - Client" />
+        <img src="images/sb.png" alt="Standard Bank - Client" />
+        <img src="images/absa.png" alt="ABSA - Client" />
+        <img src="images/nb.png" alt="Nedbank - Client" />
+        <img src="images/wb.png" alt="WesBank - Client" />
+        <img src="images/gt.png" alt="Gautrain - Client" />
+        <img src="https://placehold.co/140x60/234A8E/FFFFFF?text=Barrow" alt="Barrow - Client" />
+        <img src="images/njc.png" alt="Njilo - Client" />
+        <img src="images/saps.png" alt="SAPS - Client" />
+        <img src="images/jmpd.png" alt="JMPD - Client" />
+        <!-- duplicate -->
+        <img src="images/avisfleet.png" alt="Avis - Client" />
+        <img src="images/nt.png" alt="Treasury - Client" />
+        <img src="images/sb.png" alt="Standard Bank - Client" />
+        <img src="images/absa.png" alt="ABSA - Client" />
+        <img src="images/nb.png" alt="Nedbank - Client" />
+        <img src="images/wb.png" alt="WesBank - Client" />
+        <img src="images/gt.png" alt="Gautrain - Client" />
+        <img src="https://placehold.co/140x60/234A8E/FFFFFF?text=Barrow" alt="Barrow - Client" />
+        <img src="images/njc.png" alt="Njilo - Client" />
+        <img src="images/saps.png" alt="SAPS - Client" />
+        <img src="images/jmpd.png" alt="JMPD - Client" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT + MAP ========== -->
+  <section id="contact" class="section grey-bg">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>Contact Us</span>
+        <h2>Get In Touch</h2>
+      </div>
+
+      <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-info">
+          <h3>ADSC (Pty) Ltd</h3>
+          <p><i class="fas fa-phone"></i> <a href="tel:+27110391001">011 039 1001</a></p>
+          <p><i class="fas fa-mobile-alt"></i> <a href="tel:+27823136109">082 313 6109</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:info@adsc.co.za">info@adsc.co.za</a></p>
+
+          <h3>Alexandra Tyres</h3>
+          <p><i class="fas fa-phone"></i> <a href="tel:+27110391001">011 039 1001</a></p>
+          <p><i class="fas fa-mobile-alt"></i> <a href="tel:+27640717407">064 071 7407</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:alexandratyres@adsc.co.za">alexandratyres@adsc.co.za</a></p>
+
+          <h3>Management</h3>
+          <p><i class="fas fa-user"></i> Melusi Hadebe: <a href="tel:+27823136109">082 313 6109</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:melusi@adsc.co.za">melusi@adsc.co.za</a></p>
+          <p><i class="fas fa-user"></i> Lwazi Hadebe: <a href="tel:+27611472240">061 147 2240</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:lwazi@adsc.co.za">lwazi@adsc.co.za</a></p>
+        </div>
+
+        <form id="contactForm">
+          <input type="text" placeholder="Full Name" required aria-label="Full Name" />
+          <input type="email" placeholder="Email Address" required aria-label="Email Address" />
+          <input type="tel" placeholder="Phone Number" aria-label="Phone Number" />
+          <textarea placeholder="Message" required aria-label="Message"></textarea>
+          <button type="submit" class="btn">Send Enquiry</button>
+        </form>
+      </div>
+
+      <!-- Google Maps - Updated with new location -->
+      <div class="map-container" data-aos="fade-up" data-aos-delay="150">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.905164601886!2d28.110340!3d-26.122250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c6b1c1e6d6b%3A0x3b6d5c6b1c1e6d6b!2s7%20Cnr%201st%20Ave%20and%203rd%20St%2C%20Marlboro%2C%20Sandton%2C%202063!5e0!3m2!1sen!2sza!4v1710000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ADSC Location - Google Maps"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>&copy; 2026 ADSC (Pty) Ltd. All Rights Reserved.</p>
+    <p><a href="#home">Back to Top</a></p>
+  </footer>
+
+  <!-- ========== SOCIAL FLOATING BUTTONS ========== -->
+  <div class="social-floating">
+    <a href="https://wa.me/27640717407" target="_blank" class="social-btn whatsapp-btn" aria-label="Contact us on WhatsApp" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/alexandratyres?igsh=MWFqeHcwcmt2emZrMQ==" target="_blank" class="social-btn instagram-btn" aria-label="Follow us on Instagram" rel="noopener">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/p/Alexandra-Tyres-100054425053082/" target="_blank" class="social-btn facebook-btn" aria-label="Follow us on Facebook" rel="noopener">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </div>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
